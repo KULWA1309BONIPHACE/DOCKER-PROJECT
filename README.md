@@ -39,8 +39,8 @@ docker run -p 5000:5000 ec2-docker-project-api
 
 Test endpoints locally:
 
-- `http://localhost:5000/students`
-- `http://localhost:5000/subjects`
+- http://localhost:5000/students
+- http://localhost:5000/subjects
 
 ---
 
