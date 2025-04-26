@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+    environment:
+      - PGHOST=postgres
+      - PGUSER=postgres
+      - PGDATABASE=udomdb
+      - PGPASSWORD=Kulwa-08608
+      - PGPORT=5432
+      - PORT=5000
+
+  postgres:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_DB: udomdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Kulwa-08608
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

@@ -1,0 +1,4 @@
+✅ Server is running on http://localhost:5000
+✅ Successfully connected to PostgreSQL database
+📥 GET /subjects endpoint hit
+📤 Successfully fetched subjects
