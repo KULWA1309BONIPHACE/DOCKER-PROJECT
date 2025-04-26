@@ -39,8 +39,8 @@ docker run -p 5000:5000 ec2-docker-project-api
 
 Test endpoints locally:
 
-- http://localhost:5000/students
-- http://localhost:5000/subjects
+- `http://localhost:5000/students`
+- `http://localhost:5000/subjects`
 
 ---
 
@@ -85,10 +85,8 @@ docker-compose up -d
 
 Access API from browser:
 
-```http
 http://13.60.210.54:5000/students
 http://13.60.210.54:5000/subjects
-```
 
 ✅ Logs will show:
 
